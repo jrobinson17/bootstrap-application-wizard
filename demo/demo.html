@@ -51,7 +51,7 @@
 			Open wizard
 		</button>
 
-		<div class="wizard" id="satellite-wizard" data-title="Create Server">
+		<div class="wizard" id="satellite-wizard" data-title="New Customer Setup">
 
 			<!-- Step 1 Name & FQDN -->
 			<div class="wizard-card" data-cardname="name">
@@ -97,7 +97,7 @@
 			</div>
 
 			<div class="wizard-card" data-cardname="group">
-				<h3>Server Group</h3>
+				<h3>Would you like to manage or build new studios</h3>
 
 				<div class="wizard-input-section">
 					<p>
@@ -110,7 +110,7 @@
 			</div>
 
 			<div class="wizard-card wizard-card-overlay" data-cardname="services">
-				<h3>Service Selection</h3>
+				<h3>Select the options that best fits your needs</h3>
 
 				<div class="alert hide">
 					It's recommended that you select at least one
@@ -119,21 +119,19 @@
 
 				<div class="wizard-input-section">
 					<p>
-						Please choose the services you'd like Panopta to
-						monitor.  Any service you select will be given a default
-						check frequency of 1 minute.
+						Please choose how you would like to manage your stack.
 					</p>
 
 					<select name="services" data-placeholder="Service List" style="width:350px;" class="chzn-select create-server-service-list form-control" multiple>
 
 						<option value=""></option>
 						<optgroup label="Basic">
-							<option selected value="icmp.ping">Ping</option>
-							<option selected value="tcp.ssh">SSH</option>
-							<option value="tcp.ftp">FTP</option>
+							<option selected value="icmp.ping">List Stacks</option>
+							<option selected value="tcp.ssh">Start Stack</option>
+							<option value="tcp.ftp">Stop Stack</option>
 						</optgroup>
 						<optgroup label="Web">
-							<option selected value="tcp.http">HTTP</option>
+							<option selected value="tcp.http">Redploy Stack</option>
 							<option value="tcp.https">HTTP (Secure)</option>
 							<option value="tcp.dns">DNS</option>
 						</optgroup>
